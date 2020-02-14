@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cứ thử </title>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="letItSnow.min.js"></script>
+    <script type="text/javascript">
+      $(function launchSnowflakes() {
+        $('#snowspawner').letItSnow({
+          fall_time:5000,
+          wind: 250,
+
+        });
+      })
+    </script>
+  <style>
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      background: #ff9966; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ff9966, #ff5e62); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      border: none;
+      color: #ffffff;
+    }
+    .modal {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      z-index: 2;
+      background-color: #000000;
+      display: none;
+    }
+
+    .box {
+      background: #ff9966; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ff9966, #ff5e62); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      padding: 30px;
+      width: 250px;
+      height: 250px;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      border-radius: 50%;
+      margin-top: 20%;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body style="margin: 0">
+    <div id="snowspawner"></div>
+    <div style="
+  width: 100vw;
+  height: 100vh;
+  background-image: url('anh.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;">
+<div>
+  <h1 style="margin-top: 10vh; color: #ffffff; text-shadow: 0 0 8px #000000">Yêu nhaooo không anh Thịnh đẹp zai =)))</h1>
+  <div style="text-align: center">
+    <button id="yes">Anh đồng ý</button>
+    <button id="no">Không</button>
+  </div>
+  
+  <div class="modal">
+    <div class="box" style="text-align: center">
+      <img width="80" src="love.png" alt="">
+      <span class="heart"></span>
+      Em biết mà <br> Nghe nhạc vui vẻ anh nhé =)))  <br> 
+      <button class="reload" style="margin-top: 15px; font-size: 12px">Anh muốn đổi ý ??</button>
+      <audio controls autoplay>
+      <source src="love.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    </div>
+    
+    <iframe width="2000" height="700" src="https://www.youtube.com/embed/GIDoQsQyS0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
+</div>
+<script>
+  var w = $(window).width();
+  var h = $(window).height();
+    $('#no').hover(function () {
+      $(this).css({
+        "position": "absolute",
+        "top": (Math.random() * (h - 40) + 1),
+        "left": (Math.random() * (w - 100) + 1),
+      })
+    })
+
+  $('#yes').click(function () {
+    $('.modal').css('display','flex')
+  })
+
+  $('.reload').click(function () {
+    location.reload()
+  })
+</script>
+</body>
+</html>
