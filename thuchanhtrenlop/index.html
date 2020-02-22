@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1.bluecolor a{}
+        /* thẻ h1 với class là bluecolor trong chưa thẻ a style tất cả thẻ a */
+        h1.bluecolor >a{}
+        /* thẻ h1 với class là bluecolor trong chưa thẻ chỉ style thẻ a con k style cháu chắt  */
+        td:first-child{}
+        /* style cho con thứ nhất- lấy trong bộ phận cùng cấp với cha tr của nó  */
+        td:nth-child(2), td:nth-child(3){}
+        /* style cho con 2,3- lấy trong bộ phận cùng cấp với cha tr của nó */
+        td:nth-child(even){}
+        /* style cho dòng chẵn trong td */
+        .aside{
+            width:50px;
+            float: left;
+            height: 200px;
+        }
+        .article{
+            width:1200px;
+           
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <a href="fb.com" target="_blank">abc</a>
+    <h2>layout: Bố cục</h2>
+    <header></header>
+    <nav>phần menu
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <section>
+        <aside class="aside" style="background-color: blue;">phần menu bên trái</aside>
+        <article class="article" style="background-color: brown;">content</article>
+        <div style="background-color: chartreuse;">jsahdjdaj</div>
+        <div style="clear: both; background-color: chocolate;">dsjhfdhfj</div>
+    </section>
+    <footer style="background-color: crimson;">
+    <p>footer</p></footer>
+    <a href="" style="float:left;">link</a>
+    <p style="background-color: crimson;">sdhdhjsdbvvvvvbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbgfdgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfffffffffffff</p>
+</body>
+</html> 
