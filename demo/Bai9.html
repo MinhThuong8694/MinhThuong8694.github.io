@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo bài 9</title>
+    <style>
+        body{
+            font-family: Tahoma;            
+        }
+        table{
+            margin: 0 auto;
+            border-color:red;
+        }
+        h2{
+            text-align: center;
+            color:tomato;
+        }
+        .addcolor{
+            background-color: tomato;
+        }
+        th{
+            color: white;
+        }
+        .color td:first-child{
+            text-align: center;
+            color: rgb(163, 38, 59);
+        }
+        .color td:nth-child(3), td:nth-child(4), .align td:nth-child(2), td:nth-child(3){
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Chương trình học - ngành lập trình</h2>
+    <table border="1" width="500" cellspacing="0" cellpadding = "10">
+        <tr class="addcolor">
+            <th rowspan="2">Nhóm học phần</th>
+            <th rowspan="2">Môn học</th>
+            <th colspan="2">Số tiết</th>
+            
+        </tr>
+        <tr class="addcolor">
+            
+            <th>Lý thuyết</th>
+            
+            <th>Thực hành</th>
+        </tr>
+        <tr class="color">
+            <td rowspan="6">I<br/> Tin học văn phòng</td>
+            <td>Hệ điều hành Windows</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr class="align">
+            
+            <td>Sử dụng Internet</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr class="align">
+            
+            <td>Soạn thảo văn bản với MS Word</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr class="align">
+            
+            <td>Tạo bài trình diễn với MS PowerPoint</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr class="align">
+            
+            <td>Xử lý số liệu với MS Excel</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr class="align">
+            
+            <td>Tạo trang web với MS FrontPage</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr class="color">
+            <td rowspan="2">II<br/> Kỹ thuật lập trình (VB.NET)</td>
+            <td>Nhập môn lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr class="align">
+            
+            <td>Kỹ thuật lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td colspan="4">....</td>
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
