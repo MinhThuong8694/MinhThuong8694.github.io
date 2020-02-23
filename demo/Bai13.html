@@ -4,12 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo bài 13</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <style>
+        table{
+            width: 600px;
+            margin: 0 auto;
+            color: rgb(19, 109, 101);
+            border-color: teal;
+            background-color: rgb(253, 205, 116);
+        }
+    </style>
+<!-- Tại sao ấn nút đồng ý hiển thị được thông báo, làm sao đỏi màu cho khung fieldset -->
 </head>
 <body>
     <div class="container">
-        
+        <h2 style="color: tomato;text-align: center;">Đăng ký du lịch</h2>
+        <form action="" method="get">
+            <table border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Khách Việt Nam</td>
+                    <td><input type="checkbox" name="" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Chọn tour:</td>
+                    <td>
+                        <select name="tour" id="tour">
+                            <optgroup label="Miền Bắc">
+                                <option value="1">Hà Nội-Hạ Long-SaPa</option>
+                                <option value="2">Hà Nội-Chùa Hương-Ninh Bình</option>
+                                <option value="3">Hà Nội-Cát Bà-Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="4">Huế-Nha Trang-Bạch Mã- Đà Nẵng</option>
+                                <option value="5">Nha Trang-Đà Lạt</option>
+                                <option value="6">Buôn Ma Thuột-Gia Lai-Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option value="7">TP.HCM-Cần Thơ-Cà Mau</option>
+                                <option value="8">TP.HCM-Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phương tiện:</td>
+                    <td>
+                        <input type="radio" id="bay" name="select">
+                        <label for="bay">Máy bay</label>
+                        <input type="radio" id="car" name="select">
+                        <label for="car">Xe ô tô</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend style="color: tomato; font-style: italic; ">Số lượng đoàn khách:</legend>
+                            <label>Người lớn:</label>
+                            <input type="text">
+                            <label>Trẻ em:</label>
+                            <input type="text">
+                        </fieldset>
+                        
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Ghi chú thêm:</td>
+                    <td>
+                        <textarea rows="4" cols="50">
+Có 2 trẻ em dưới 6 tuổi 
+Có 2 người ăn chay
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="document.getElementById('hien').innerHTML = 'Bạn đã đăng ký thành công!!!'" style="margin-left: 250px;">Đồng ý</button>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="2"><p id="hien" style="color: brown; text-align: center;"></p></td>
+                    
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 </html>
