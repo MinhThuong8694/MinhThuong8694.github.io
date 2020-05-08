@@ -1,0 +1,57 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+.menu .list .item{
+    display: inline-block;
+    padding: 12px;
+    
+}
+.menu{
+    background-color: teal;
+    height: 45px;
+}
+ul, li, body{
+    padding: 0;
+    margin: 0;
+}
+.menu .list .item a{
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+    /* mất đi gạch chân của thẻ a */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+.menu .list{
+    text-align: center;
+}
+.menu .list .item a:hover{
+    color: yellow;
+  
+}
+.menu .list .item:hover{
+    
+    background-color: tomato;
+    /* cursor: pointer;*/
+}
+.menu .list .item{
+    position: Relative;
+    
+}
+.sub-menu .sub-list{
+    text-align: start;
+}
+.menu .list .item .sub-menu{
+    left: 0px;
+    top: 42px;
+    position: absolute;
+    display: none;
+    background-color: tomato;
+}
+.sub-menu .sub-list .sub-item{
+    list-style-type: none;
+}
+.menu .list .item:hover .sub-menu{
+    display: block;
+}

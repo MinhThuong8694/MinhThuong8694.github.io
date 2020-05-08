@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p[class]{color:blue}
+        /* chọn tất cả thẻ p có class còn k có k đc style */
+        p[class]{}
+    </style>
+    
+</head>
+<body>
+    <!-- thứ tự class k quan trọng, quan trong trong css thứ tự cái nào trc cái nào sau -->
+    <!-- cái nào rõ ràng hơn đc ưu tiên hơn vd: p.pg (pg là class) mặc dù trong css nó đứng trc -> về xem lại viết note nhá:)) -->
+    <!-- p.pg đồng cấp thêm vào -->
+    <!-- cục bộ, nội tuyến, ngoại tuyến  -->
+    <!-- paragraph heading format -->
+    <p>This is paragraph</p>
+    <h1>This is h1</h1>
+    <h6><b><i>This is h6</i></b></h6>
+    <em>This is em</em>
+    <strong><mark>This is strong</mark></strong>
+    <!-- Data list -->
+    <ul style="">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!--  --> 
+    <table>
+        <tr>
+            <td row></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- html form -->
+    <!-- get sẽ để hết thông tin của id lên url, còn post thì không -->
+    <form action="server.js" method="GET">
+        <label for="">user name:</label>
+        <input type="text"required>
+        <!-- required bắt phải nhập vào trg này -->
+        <input type="checkbox" name="" id="remember">
+        <label for="remember">Nhớ phiên đăng nhập</label>
+        <!-- for và id trên giống nhau để khi kích vào chữ sẽ đc tích vào ô luôn k cần ấn chuẩn vào ô -->
+        <br/>
+        <label for="">Nam</label>
+        <input type="radio" name="select">
+        <label for="">Nữ</label>
+        <input type="radio" name="select">
+        <!-- đặt cùng name khi tích sẽ chỉ chọn đc 1 -->
+        <select name="student" id="student">
+            <option value="t3h1">Huyen</option>
+            <option value="t3h2">Huyen</option>
+            <option value="t3h3">tien</option>
+        </select>
+        <!-- thuộc tính value bên trên dùng như id giúp phân biệt những thứ có tên giống nhau, về mặt giao diện thì vẫn hiển thị bình thg k phan biệt đc nhưng trên hệ thống sẽ biết là huyền nào. value giống như msv phân biệt 2 ng cùng tên -->
+        <br/>
+        <label for="date-of-birth">Ngày sinh</label>
+        <input type="date" id="date-of-birth">
+        <br/>
+        <label for="height">chieu cao</label>
+        <input type="number" id="height" min="0" max="2">
+        <!-- min max để khi mình biết chắc chắn chiều cao của ng đó trong 1 khoảng gì đó -->
+        <input type="color">
+        <input type="submit" value="xác nhận" onclick="onSubmit()"> 
+        <!-- submit ktra điều kiện bắt buộc phải đúng mới dc gửi đi sai sẽ có thông báo -->
+        <p id="show" style="display:none;">bạn đã đang nhập thành công</p>
+        
+    </form>
+    <script>
+        function onSubmit(){
+            event.preventDefault();
+            // ,alert('hello class')
+            document.getElementById("show").style.display="block";
+        }
+        // onSubmit chữ S bắt buộc phải viết hoa kẻo k nhận đc vì trùng từ khóa
+        
+    </script>
+    <header>
+        <h2>this is header </h2>
+    </header>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <article>
+        <aside>this is aside </aside>
+        <section>
+            <h3>this is the section</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, tempore culpa dignissimos unde repellat molestias beatae eaque velit voluptatibus quibusdam, corporis maiores autem alias eligendi magni, accusamus molestiae nam! Ad.</p>
+        </section>
+        
+    </article>
+    <footer>
+        this is footer
+    </footer>
+    <!-- xem 1 số thẻ chuẩn để làm seo -->
+    <!-- css selector attribute -->
+    <p class="">this is paragraph 5</p>
+    <p>this is paragraph 5</p>
+    <p>this is paragraph 5</p>
+    <p>this is paragraph 5</p>
+</body>
+</html>

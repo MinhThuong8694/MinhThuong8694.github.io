@@ -1,0 +1,27 @@
+/* p{
+    color: red;
+} */
+
+#third-paragraph{
+    color: blue;
+}
+p.red-color{
+    color: red;
+}
+p .red-color{
+    color: blue;
+}
+/* dính liền là dùng chung 1 thẻ p có class red-color. còn cách ra là cha con nó sẽ vào con */
+.parent p{
+    color: green;
+}
+.parent h3{
+    color:pink;
+}
+.parent .yellow-color{
+    color: yellow;
+}
+.parent2 p:first-child{
+    color: red;
+}
+/* first-child áp dụng cho all đầu của con và cháu chít... */
