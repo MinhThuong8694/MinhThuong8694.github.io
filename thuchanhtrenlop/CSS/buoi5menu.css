@@ -45,7 +45,7 @@ ul, li, body{
 .menu .list .item .sub-menu{
     left: 0px;
     top: 42px;
-    position: absolute;
+    position: absolute; 
     display: none;
     background-color: tomato;
 }
