@@ -1,0 +1,81 @@
+body, ul, li{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: teal;
+}
+
+nav{
+    background-color: yellow;
+}
+section{
+    background-color: tomato;
+}
+section aside .heading{
+    margin: 0;
+}
+aside{
+    background-color: violet;
+}
+article{
+    background-color: green;
+}
+footer{
+    background-color: grey;
+}
+/* layout */
+/* aside{
+    width: 20%;
+    float: left;
+}
+article{
+    width: 70%;
+    float: left;
+}
+footer{
+    clear: both;
+} */
+.block{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+/* .block__transform{
+    transform: scale(10,10);
+    transform: rotate(45deg);
+} */
+.grant-parent{
+    width: 500px;
+    height: 500px;
+    background-color: blanchedalmond;
+    margin-left: 50px;
+    position: relative;
+
+}
+.parent{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin-left: 70px;
+}
+.block__transform{
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.block__absolute{
+    background-color: black;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+img:hover{
+    transform: scale(1.3, 1.3);
+    transition: transform 1s ease 0s; 
+    /* transition: transform 1s ease 0s;  lệnh này để ảnh phóng ra từ từ hơn */
+
+}
+/* animations */
+/* keyframes - responsive */
